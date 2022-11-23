@@ -1,0 +1,135 @@
+header {
+    display: flex;
+    justify-content: center;
+   
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(239, 9, 120);
+    font-size: 36px;
+    text-align: right;
+    margin-right: 90px;
+    text-decoration-line: underline;
+}
+
+body {
+    margin: 0;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 85, 0.8970938717283788) 27%, rgba(0, 212, 255, 1) 100%);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.container-img {
+    width: 100px;
+    height: 100px;
+    
+}
+
+.container-img img {
+    width: 110%;
+    height: 100%;
+    
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    border:6px solid #fe068a;
+    border-style:groove;
+    background-color: #0b1f1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:30px;
+    border-radius:10px;
+    font-family: sans-serif;
+    text-align: center;
+    color: yellow;
+    box-shadow: 0 0 20px #ae00ff, 0 0 35px #001eff, 0 0 60px #ae00ff;
+    
+
+
+
+}
+
+.card :hover {
+    transform: scale(1.30);
+    box-shadow: 0 0 30px #ae00ff, 0 0 45px #ff00dd, 0 0 70px #ae00ff;
+    transition-delay: 0.2s;
+
+}
+
+img {
+    border-radius: 10%;
+    width:135px;
+    box-shadow: 0 0 40px 0 maroon;
+    
+}
+
+footer {
+    display: flex;
+    color: #fab41e;
+    font-size: 18px;
+    text-decoration: solid;
+    
+
+}
+
+.footer {
+    margin-left: 85px;
+}
+
+.loader {
+    position: relative;
+}
+
+.loader span {
+    position: absolute;
+    color: #fff;
+    transform: translate(-60%, -60%);
+    font-size: 38px;
+    letter-spacing: 10px;
+    margin: -15px;
+}
+
+.loader span:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke:2px rgb(255, 255, 252);
+}
+
+.loader span:nth-child(2) {
+    color: rgb(7, 7, 7);
+    -webkit-text-stroke: 2px rgb(249, 6, 79);
+    animation: uiverse723 3s ease-in-out infinite;
+}
+
+@keyframes uiverse723 {
+
+    0%,
+    100% {
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%,
+                54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+
+    50% {
+        clip-path: polygon(0% 60%, 16% 65%, 34% 66%,
+                51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+}
+@media(max-width:741px) {
+    h1{
+        text-align:center;
+    }
+    header{
+        display:none;
+    }
+}
+
